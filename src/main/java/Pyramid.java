@@ -1,7 +1,7 @@
 
 public class Pyramid {
     /**
-     * TODO: Return a string that is a pyramid of size n, made of of asterisks and no spaces.
+     * DONE: Return a string that is a pyramid of size n, made of of asterisks and no spaces.
      *
      *     for example:
      *
@@ -28,6 +28,13 @@ public class Pyramid {
      * @return a string representation of the pyramid.
      */
     public String returnPyramid(int n){
-        return "";
+        String result = "";
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                result += '*';
+            }
+            result += '\n';
+        }
+        return result;
     }
 }
